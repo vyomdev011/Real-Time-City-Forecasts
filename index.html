@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter the location">
+            <button class='bx bx-search'></button>
+        </div>
+        <div class="forecast">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="images/clear.png" alt="no image">
+                        <p class="temperature">12<span>°C</span>
+
+                        </p>
+                        <p class="description">Clear Sky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="climate-info">
+            <div class="humidity">
+                <img src="images/humidity.png" alt="no image">
+                <div class="text">
+                    <div class="humi-info">
+                        <span>0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wind-info">
+                <img src="images/wind-power.png" alt="no image">
+                <div class="text">
+                    <div class="wind">
+                        <span>1km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

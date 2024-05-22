@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/bg2.jpg');
+    background-size : cover;
+    background-position: center;
+
+}
+
+.container
+{
+    
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 555px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    
+    position: relative;
+    
+}
+
+.search-box input{
+    position: absolute;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase ;
+    padding: 0 50px 0 40px;
+    border-radius: 10px;
+
+}
+
+.search-box input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    border: none;
+    
+    background: transparent;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    outline: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+.search-box button:hover{
+    border-radius: 11px;
+    color: rgb(33, 36, 24);
+    background-color: rgb(218, 245, 157);
+}
+.search-box i{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 25px;
+    height: 100%;
+    width: 40px;
+    outline: none;
+    color: white;
+}
+.forecast
+{
+   text-align: center;
+   margin: 40px 0;
+   color: white;
+}
+.forecast img{
+    /* position: absolute; */
+    width: 60%;
+}
+.forecast .temperature{
+   
+    position: relative;
+   
+    font-size:60px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0px 0 6px -30px;
+}
+
+.forecast .temperature span{
+    position:absolute;
+    font-size: 21px;
+    font-weight: 400;
+   
+    margin-left: 5px;
+}
+
+.forecast .description{
+    font-weight: 300;
+    font-size: 19px;
+    margin-right: 10px;
+   
+}
+
+.climate-info{
+    display: flex;
+    
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    padding: 20px 10px 30px 10px;
+    color: white;
+
+}
+
+.climate-info .humidity,.climate-info .wind-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.climate-info .text{
+    padding: 0 5px;
+
+}
+.climate-info img{
+    height: 35px;
+}
+
+.climate-info span{
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 300;
+}
+.climate-info p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
